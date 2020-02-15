@@ -83,9 +83,9 @@ function myString(chain) {
   /*------------------------------ Solución ------------------------------------------- */
   
   let student = {
-    name: "Mayra Regalado",
-    email: "maiira.regalado@gmail.com",
-    carreer: "Fullstack developer"
+    name: "Fulanito",
+    email: "fulanito.detal@gmail.com",
+    password: "fulanito123"
   };
   function myObject(student) {
     console.log(
@@ -253,11 +253,42 @@ function myString(chain) {
   entre los proyectos finales que tienen asignados.
   
   Describir el caso:
-  
-  Mostrar la solucíon en código:
-  
+
+  PROYECTO DE ENCUESTAS:
+
+  Se crea una función que reciba una encuesta y que al ser llamada muestre los resultados:
+  * El numero de propiedades que contiene la encuesta.
+  * El nombre las propiedades de la encuesta.
+  * Las respuestas del usuario.
   
   */
+  
+  
+  /* Mostrar la solucíon en código:  */
+  let survey = {
+    surveyName: "WC Survey",
+    surveyCreator: "WemanConnect",
+    name: "Mayra Regalado",
+    email: "maiira.regalado@gmail.com",
+    carreer: "Fullstack developer",
+    questions: { 
+    Q1: "Question1",
+    Q2: "Question2",
+    Q3: "Question3",
+    Q4: "Question4",
+    Q5: "Question5",
+    Q6: "Question6",
+    Q7: "Question7",
+    }  
+  };
+  function mySurvey(survey) {
+    console.log(
+      Object.keys(survey).length,
+      Object.keys(survey),
+      Object.values(survey)
+    );
+  }
   console.log("Ex.10: Extra");
+  mySurvey(survey);
   
   
